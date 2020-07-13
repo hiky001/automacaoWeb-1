@@ -3,6 +3,7 @@ package br.com.bootcamp.commons;
 import br.com.bootcamp.settings.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -145,8 +146,11 @@ public class SeleniumRobot extends BaseTest {
 
 	public boolean verificaElementoPresenteTela(WebElement webElement) {
 		waitProcessPage();
-		esperaElementoSerVisivel(webElement);
-		return webElement.isDisplayed();
+		try {
+			return webElement.isDisplayed();
+		} catch (NoSuchElementException exception) {
+			return false;
+		}
 	}
 
 	private ExpectedCondition<Boolean> waitProcess() {
