@@ -7,6 +7,128 @@
       },
       {
         "line": 2,
+        "value": "#encoding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#author: henrique.silva"
+      },
+      {
+        "line": 4,
+        "value": "#date: 12/07/2020"
+      },
+      {
+        "line": 5,
+        "value": "#version: 1.0.0"
+      }
+    ],
+    "line": 8,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13784103400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeWeb()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Realizar o cadastro com sucesso de um cliente válido",
+        "description": "",
+        "id": "realizar-cadastro-no-site;realizar-o-cadastro-com-sucesso-de-um-cliente-válido",
+        "after": [
+          {
+            "result": {
+              "duration": 1010058700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterWeb()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1293795000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que clico no botao \"Register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Register",
+                  "offset": 20
+                }
+              ],
+              "location": "HomeSteps.queClicoNoBotao(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3015901700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "realizo o cadastro do cliente",
+            "match": {
+              "location": "CadastroSteps.realizoCadastroDoCliente()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 181592700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "visualizo a mensagem \"Your registration completed\" na tela",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your registration completed",
+                  "offset": 22
+                }
+              ],
+              "location": "CadastroSteps.visualizoAMensagemNaTela(String)"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Realizar cadastro no site",
+    "description": "",
+    "id": "realizar-cadastro-no-site",
+    "keyword": "Funcionalidade",
+    "uri": "web/Cadastro.feature",
+    "tags": [
+      {
+        "line": 7,
+        "name": "@web"
+      },
+      {
+        "line": 7,
+        "name": "@cadastro"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
         "value": "#enconding: UTF-8"
       },
       {
@@ -28,7 +150,281 @@
         "before": [
           {
             "result": {
-              "duration": 16156682800,
+              "duration": 16074940600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeWeb()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Realizar uma comprar com cartao de credito no site",
+        "description": "",
+        "id": "realizar-uma-compra-no-site;realizar-uma-comprar-com-cartao-de-credito-no-site",
+        "after": [
+          {
+            "result": {
+              "duration": 983137500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterWeb()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2218842100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que acesso a tela de login com o usuário logado",
+            "match": {
+              "location": "HomeSteps.queAcessoATelaDeLoginComOUsuárioLogado()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2634363500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no produto",
+            "match": {
+              "location": "HomeSteps.clicoNoProduto()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 4291167200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "preencho as configurações do produto",
+            "match": {
+              "location": "ComprasStep.preenchoAsConfiguraçõesDoProduto()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 9841237100,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for br.com.bootcamp.commons.SeleniumRobot$$Lambda$297/0x00000001002f4c40@37d6dddc (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-QJ975NQ\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\DELLLA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 92cdf3dc3e3b39de7233e9ddf9dd8569\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat br.com.bootcamp.commons.SeleniumRobot.waitProcessPage(SeleniumRobot.java:184)\r\n\tat br.com.bootcamp.commons.SeleniumRobot.clicaBotaoJS(SeleniumRobot.java:20)\r\n\tat br.com.bootcamp.funcionalidade.web.ComprasFuncionalidade.preencheDadosNoCarrinho(ComprasFuncionalidade.java:35)\r\n\tat br.com.bootcamp.web.steps.ComprasStep.completoOsDadosDeConfirmaçãoDeCompras(ComprasStep.java:25)\r\n\tat ✽.E completo os dados de confirmação de compras(web/CompraComCartao.feature:14)\r\n",
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "completo os dados de confirmação de compras",
+            "match": {
+              "location": "ComprasStep.completoOsDadosDeConfirmaçãoDeCompras()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "visualizo a mensagem \"Your order has been successfully processed!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your order has been successfully processed!",
+                  "offset": 22
+                }
+              ],
+              "location": "HomeSteps.visualizoAMensagem(String)"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Realizar uma compra no site",
+    "description": "",
+    "id": "realizar-uma-compra-no-site",
+    "keyword": "Funcionalidade",
+    "uri": "web/CompraComCartao.feature",
+    "tags": [
+      {
+        "line": 7,
+        "name": "@web"
+      },
+      {
+        "line": 7,
+        "name": "@compra"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#enconding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#author: henrique.silva"
+      },
+      {
+        "line": 4,
+        "value": "#date: 12/07/2020"
+      },
+      {
+        "line": 5,
+        "value": "#version: 1.0.0"
+      }
+    ],
+    "line": 8,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16083449700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeWeb()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Realizar login na aplicação com usuário cadastrado",
+        "description": "",
+        "id": "validar-login-da-aplicação;realizar-login-na-aplicação-com-usuário-cadastrado",
+        "after": [
+          {
+            "result": {
+              "duration": 1380345300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterWeb()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 938453100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que clico no botao \"Log in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log in",
+                  "offset": 20
+                }
+              ],
+              "location": "HomeSteps.queClicoNoBotao(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 149362200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "preencho os dados de login com usuário \"cadastrado\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cadastrado",
+                  "offset": 40
+                }
+              ],
+              "location": "LoginSteps.preenchoOsDadosDeLoginComUsuário(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1131887500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em Log in",
+            "match": {
+              "location": "LoginSteps.clicoEmLogIn()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 261322700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "visualizo a tela inicial com meu usuario logado",
+            "match": {
+              "location": "HomeSteps.visualizoATelaInicialComMeuUsuarioLogado()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Validar Login da aplicação",
+    "description": "",
+    "id": "validar-login-da-aplicação",
+    "keyword": "Funcionalidade",
+    "uri": "web/Login.feature",
+    "tags": [
+      {
+        "line": 7,
+        "name": "@web"
+      },
+      {
+        "line": 7,
+        "name": "@login"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#enconding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#author: henrique.silva"
+      },
+      {
+        "line": 4,
+        "value": "#date: 12/07/2020"
+      },
+      {
+        "line": 5,
+        "value": "#version: 1.0.0"
+      }
+    ],
+    "line": 8,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10965458900,
               "status": "passed"
             },
             "match": {
@@ -43,7 +439,7 @@
         "after": [
           {
             "result": {
-              "duration": 1049086700,
+              "duration": 955711700,
               "status": "passed"
             },
             "match": {
@@ -56,7 +452,7 @@
         "steps": [
           {
             "result": {
-              "duration": 632699700,
+              "duration": 85858200,
               "status": "passed"
             },
             "line": 11,
@@ -68,7 +464,7 @@
           },
           {
             "result": {
-              "duration": 1087216600,
+              "duration": 979112100,
               "status": "passed"
             },
             "line": 12,
@@ -80,7 +476,7 @@
           },
           {
             "result": {
-              "duration": 197828000,
+              "duration": 100633200,
               "status": "passed"
             },
             "line": 13,

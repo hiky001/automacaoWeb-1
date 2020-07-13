@@ -15,8 +15,8 @@ public class BaseTest {
 	protected static WebDriverWait wait;
 
 	protected void initializeWebApplication(BrowserImp webApplication) {
-		if (webDriver != null)
-			webDriver.close();
+//		if (webDriver != null)
+//			webDriver.close();
 
 		webDriver = webApplication.getDriver();
 		webDriver.manage().window().maximize();
