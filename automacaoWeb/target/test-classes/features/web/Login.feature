@@ -1,14 +1,14 @@
 #language: pt
 #enconding: UTF-8
-#author: marcos.barbosa
-#date: 03/07/2020
-#version: 1.0
+#author: henrique.silva
+#date: 12/07/2020
+#version: 1.0.0
 
+@web @login
 Funcionalidade: Validar Login da aplicação
 
-  @login @web13
   Cenario: Realizar login na aplicação com usuário cadastrado
-    Dado que clico no botao "Entre ou Cadastre-se"
+    Dado que clico no botao "Log in"
     E preencho os dados de login com usuário "cadastrado"
-    Quando clico em "Continuar"
+    Quando clico em Log in
     Entao visualizo a tela inicial com meu usuario logado

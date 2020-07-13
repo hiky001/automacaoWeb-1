@@ -1,6 +1,6 @@
 package br.com.bootcamp.web.steps;
 
-import br.com.bootcamp.bean.commons.SeleniumRobot;
+import br.com.bootcamp.commons.SeleniumRobot;
 import br.com.bootcamp.funcionalidade.web.CadastroFuncionalidade;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;

@@ -1,0 +1,112 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#enconding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#author: henrique.silva"
+      },
+      {
+        "line": 4,
+        "value": "#date: 12/07/2020"
+      },
+      {
+        "line": 5,
+        "value": "#version: 1.0.0"
+      }
+    ],
+    "line": 8,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16156682800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeWeb()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Realizar uma pesquisa válida no site",
+        "description": "",
+        "id": "realizar-pesquisa-no-site;realizar-uma-pesquisa-válida-no-site",
+        "after": [
+          {
+            "result": {
+              "duration": 1049086700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterWeb()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 632699700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que escrevo no campo de pesquisa",
+            "match": {
+              "location": "HomeSteps.queEscrevoNoCampoDePesquisa()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1087216600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no botao de busca",
+            "match": {
+              "location": "HomeSteps.clicoNoBotaoDeBusca()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 197828000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "visualizo o item pesquisado",
+            "match": {
+              "location": "HomeSteps.visualizoOItemPesquisado()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Realizar pesquisa no site",
+    "description": "",
+    "id": "realizar-pesquisa-no-site",
+    "keyword": "Funcionalidade",
+    "uri": "web/Pesquisa.feature",
+    "tags": [
+      {
+        "line": 7,
+        "name": "@web"
+      },
+      {
+        "line": 7,
+        "name": "@pesquisa"
+      }
+    ]
+  }
+]

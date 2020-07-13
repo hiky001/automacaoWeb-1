@@ -14,6 +14,6 @@ public class HomeSteps {
     @Dado("^que toco na opção \"([^\"]*)\"$")
     public void queTocoNaOpção(String menu) {
         this.homeFuncionalidade.selecionaMenu(menu);
-
     }
+
 }

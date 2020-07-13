@@ -1,6 +1,6 @@
 package br.com.bootcamp.funcionalidade.web;
 
-import br.com.bootcamp.bean.commons.SeleniumRobot;
+import br.com.bootcamp.commons.SeleniumRobot;
 import br.com.bootcamp.pages.web.CadastroPage;
 import br.com.bootcamp.settings.BaseTest;
 import com.github.javafaker.Faker;

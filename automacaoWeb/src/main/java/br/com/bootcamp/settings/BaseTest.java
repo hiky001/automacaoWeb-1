@@ -19,7 +19,7 @@ public class BaseTest {
 			webDriver.close();
 
 		webDriver = webApplication.getDriver();
-		webDriver.manage().window().fullscreen();
+		webDriver.manage().window().maximize();
 		webDriver.get("http://demowebshop.tricentis.com/");
 		wait = new WebDriverWait(webDriver, 60);
 
@@ -38,5 +38,9 @@ public class BaseTest {
 
 	protected static void closeMobile() {
 		driver.quit();
+	}
+
+	public static WebDriver getWebDriver(){
+		return webDriver;
 	}
 }

@@ -17,15 +17,16 @@ public class HomePage {
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Formulário']")
     private MobileElement menuFormulario;
-
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='About...']")
-    private MobileElement menuAbout;
-
     public MobileElement getMenuFormulario() {
         return menuFormulario;
     }
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='About...']")
+    private MobileElement menuAbout;
     public MobileElement getMenuAbout() {
         return menuAbout;
     }
+
+
+
 }

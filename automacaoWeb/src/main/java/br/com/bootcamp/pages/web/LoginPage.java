@@ -12,19 +12,22 @@ public class LoginPage {
 		PageFactory.initElements(webDriver, this);
 	}
 	
-	@FindBy(id="Email")
+	@FindBy(xpath = "//input[@id = 'Email']")
 	private WebElement txtEmail;
-	
-	@FindBy(id="Senha")
-	private WebElement txtSenha;
-
 	public WebElement getTxtEmail() {
 		return txtEmail;
 	}
 
+	@FindBy(xpath = "//input[@id = 'Password']")
+	private WebElement txtSenha;
 	public WebElement getTxtSenha() {
 		return txtSenha;
 	}
-	
-	
+
+	@FindBy(xpath = "//input[@class = 'button-1 login-button']")
+	private WebElement botaoLogIn;
+	public WebElement getBotaoLogIn(){
+		return botaoLogIn;
+	}
+
 }
