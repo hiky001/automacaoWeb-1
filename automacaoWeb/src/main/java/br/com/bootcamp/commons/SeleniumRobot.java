@@ -180,7 +180,7 @@ public class SeleniumRobot extends BaseTest {
 	 * Metodo que executo um comando do javascript para aguardar os elementos da pagina carregarem
 	 */
 	private void waitProcessPage(){
-		WebDriverWait webDriverWait = new WebDriverWait(getWebDriver(), 15);
+		WebDriverWait webDriverWait = new WebDriverWait(getWebDriver(), 20);
 		webDriverWait.until(waitProcess());
 	}
 }

@@ -2,8 +2,8 @@ package br.com.bootcamp.web.steps;
 
 import br.com.bootcamp.commons.SeleniumRobot;
 import br.com.bootcamp.funcionalidade.web.CadastroFuncionalidade;
-import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
 
 public class CadastroSteps {
 
@@ -15,13 +15,13 @@ public class CadastroSteps {
         this.cadastroFuncionalidade = new CadastroFuncionalidade();
     }
 
-    @E("^realizo o cadastro do cliente$")
+    @Quando("^realizo o cadastro do cliente$")
     public void realizoCadastroDoCliente() {
         this.cadastroFuncionalidade.preencheDadosERegistra();
     }
 
     @Entao("^visualizo a mensagem \"([^\"]*)\" na tela$")
     public void visualizoAMensagemNaTela(String mensagem){
-        this.seleniumRobot.validaTexto(this.cadastroFuncionalidade.retornaMensagem(),mensagem);
+        this.cadastroFuncionalidade.validaCadastro(mensagem);
     }
 }

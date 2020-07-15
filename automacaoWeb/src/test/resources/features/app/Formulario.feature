@@ -6,6 +6,6 @@
 
 Funcionalidade: Teste execucao App
 
-  @mobile @test-mobile
+  @mobile @mobile
   Cenario: Execucao App
     Dado que toco na opção "Formulario"

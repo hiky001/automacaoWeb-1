@@ -42,4 +42,9 @@ public class HomeFuncionalidade extends BaseTest{
 	public boolean verificaItemPassado(){
 		return seleniumRobot.verificaElementoPresenteTela(homePage.getItemPesquisado());
 	}
+
+	public void clicaBotao(String textoBotao){
+		this.seleniumRobot.clicaBotaoPorTexto(textoBotao);
+	}
+
 }

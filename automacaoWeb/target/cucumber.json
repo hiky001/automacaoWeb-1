@@ -28,7 +28,7 @@
         "before": [
           {
             "result": {
-              "duration": 13784103400,
+              "duration": 12563599500,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "after": [
           {
             "result": {
-              "duration": 1010058700,
+              "duration": 1370736700,
               "status": "passed"
             },
             "match": {
@@ -56,7 +56,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1293795000,
+              "duration": 1518529500,
               "status": "passed"
             },
             "line": 11,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 3015901700,
+              "duration": 3507449000,
               "status": "passed"
             },
             "line": 12,
@@ -86,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 181592700,
+              "duration": 192146100,
               "status": "passed"
             },
             "line": 13,
@@ -150,7 +150,7 @@
         "before": [
           {
             "result": {
-              "duration": 16074940600,
+              "duration": 11259823200,
               "status": "passed"
             },
             "match": {
@@ -165,7 +165,7 @@
         "after": [
           {
             "result": {
-              "duration": 983137500,
+              "duration": 1052037400,
               "status": "passed"
             },
             "match": {
@@ -178,7 +178,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2218842100,
+              "duration": 2069531000,
               "status": "passed"
             },
             "line": 11,
@@ -190,7 +190,7 @@
           },
           {
             "result": {
-              "duration": 2634363500,
+              "duration": 3868456800,
               "status": "passed"
             },
             "line": 12,
@@ -202,7 +202,7 @@
           },
           {
             "result": {
-              "duration": 4291167200,
+              "duration": 3115377500,
               "status": "passed"
             },
             "line": 13,
@@ -214,9 +214,8 @@
           },
           {
             "result": {
-              "duration": 9841237100,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for br.com.bootcamp.commons.SeleniumRobot$$Lambda$297/0x00000001002f4c40@37d6dddc (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-QJ975NQ\u0027, ip: \u0027192.168.0.105\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\DELLLA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 92cdf3dc3e3b39de7233e9ddf9dd8569\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat br.com.bootcamp.commons.SeleniumRobot.waitProcessPage(SeleniumRobot.java:184)\r\n\tat br.com.bootcamp.commons.SeleniumRobot.clicaBotaoJS(SeleniumRobot.java:20)\r\n\tat br.com.bootcamp.funcionalidade.web.ComprasFuncionalidade.preencheDadosNoCarrinho(ComprasFuncionalidade.java:35)\r\n\tat br.com.bootcamp.web.steps.ComprasStep.completoOsDadosDeConfirmaçãoDeCompras(ComprasStep.java:25)\r\n\tat ✽.E completo os dados de confirmação de compras(web/CompraComCartao.feature:14)\r\n",
-              "status": "failed"
+              "duration": 5570375700,
+              "status": "passed"
             },
             "line": 14,
             "name": "completo os dados de confirmação de compras",
@@ -227,7 +226,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1577222000,
+              "status": "passed"
             },
             "line": 15,
             "name": "visualizo a mensagem \"Your order has been successfully processed!\"",
@@ -290,7 +290,7 @@
         "before": [
           {
             "result": {
-              "duration": 16083449700,
+              "duration": 9696804500,
               "status": "passed"
             },
             "match": {
@@ -305,7 +305,7 @@
         "after": [
           {
             "result": {
-              "duration": 1380345300,
+              "duration": 970565300,
               "status": "passed"
             },
             "match": {
@@ -318,7 +318,7 @@
         "steps": [
           {
             "result": {
-              "duration": 938453100,
+              "duration": 1215157000,
               "status": "passed"
             },
             "line": 11,
@@ -336,7 +336,7 @@
           },
           {
             "result": {
-              "duration": 149362200,
+              "duration": 176391800,
               "status": "passed"
             },
             "line": 12,
@@ -354,7 +354,7 @@
           },
           {
             "result": {
-              "duration": 1131887500,
+              "duration": 1268878200,
               "status": "passed"
             },
             "line": 13,
@@ -366,7 +366,7 @@
           },
           {
             "result": {
-              "duration": 261322700,
+              "duration": 328265700,
               "status": "passed"
             },
             "line": 14,
@@ -424,7 +424,7 @@
         "before": [
           {
             "result": {
-              "duration": 10965458900,
+              "duration": 13378748700,
               "status": "passed"
             },
             "match": {
@@ -439,7 +439,7 @@
         "after": [
           {
             "result": {
-              "duration": 955711700,
+              "duration": 1062862400,
               "status": "passed"
             },
             "match": {
@@ -452,7 +452,7 @@
         "steps": [
           {
             "result": {
-              "duration": 85858200,
+              "duration": 194952600,
               "status": "passed"
             },
             "line": 11,
@@ -464,7 +464,7 @@
           },
           {
             "result": {
-              "duration": 979112100,
+              "duration": 979249400,
               "status": "passed"
             },
             "line": 12,
@@ -476,7 +476,7 @@
           },
           {
             "result": {
-              "duration": 100633200,
+              "duration": 71503900,
               "status": "passed"
             },
             "line": 13,

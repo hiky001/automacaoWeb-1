@@ -33,4 +33,8 @@ public class CadastroFuncionalidade extends BaseTest {
     public String retornaMensagem(){
        return this.seleniumRobot.pegarValorTexto(this.cadastroPage.getMsgResult());
     }
+
+    public void validaCadastro(String mensagem){
+        this.seleniumRobot.validaTexto(retornaMensagem(),mensagem);
+    }
 }

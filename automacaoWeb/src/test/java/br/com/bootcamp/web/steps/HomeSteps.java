@@ -26,7 +26,7 @@ public class HomeSteps {
 
     @Dado("^que clico no botao \"([^\"]*)\"$")
     public void queClicoNoBotao(String textoBotao){
-        this.seleniumRobot.clicaBotaoPorTexto(textoBotao);
+        this.homeFuncionalidade.clicaBotao(textoBotao);
     }
 
     @Entao("^visualizo a tela inicial com meu usuario logado$")
@@ -36,7 +36,7 @@ public class HomeSteps {
 
     @Dado("^que acesso a tela de login com o usuário logado$")
     public void queAcessoATelaDeLoginComOUsuárioLogado() {
-        this.seleniumRobot.clicaBotaoPorTexto("Log in");
+        this.homeFuncionalidade.clicaBotao("Log in");
         this.loginSteps.preenchoOsDadosDeLoginComUsuário("cadastrado");
         this.loginSteps.clicoEmLogIn();
     }
@@ -59,11 +59,11 @@ public class HomeSteps {
 
     @Dado("^que escrevo no campo de pesquisa$")
     public void queEscrevoNoCampoDePesquisa() {
-        homeFuncionalidade.escreveCampoPesquisa("Fiction EX");
+        this.homeFuncionalidade.escreveCampoPesquisa("Fiction EX");
     }
 
     @Quando("^clico no botao de busca$")
     public void clicoNoBotaoDeBusca() {
-        homeFuncionalidade.clicaBotaoDeBusca();
+        this.homeFuncionalidade.clicaBotaoDeBusca();
     }
 }
