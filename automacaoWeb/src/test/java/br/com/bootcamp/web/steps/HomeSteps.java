@@ -1,9 +1,7 @@
 package br.com.bootcamp.web.steps;
 
-import br.com.bootcamp.commons.SeleniumRobot;
 import br.com.bootcamp.enums.Credentials;
 import br.com.bootcamp.funcionalidade.web.HomeFuncionalidade;
-import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
@@ -14,12 +12,10 @@ import javax.swing.*;
 
 public class HomeSteps {
 
-    private SeleniumRobot seleniumRobot;
     private HomeFuncionalidade homeFuncionalidade;
     private LoginSteps loginSteps;
 
     public HomeSteps() {
-        this.seleniumRobot = new SeleniumRobot();
         this.homeFuncionalidade = new HomeFuncionalidade();
         this.loginSteps = new LoginSteps();
     }

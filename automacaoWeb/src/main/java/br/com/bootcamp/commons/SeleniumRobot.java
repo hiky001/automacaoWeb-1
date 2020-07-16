@@ -127,7 +127,7 @@ public class SeleniumRobot extends BaseTest {
 	 * @param elemento Elemento pai da Lista de seleção(id da tag select)
 	 * @param index Posição do elemento na lista
 	 */
-	public void selecionaItemLista(WebElement elemento, int index){
+	public void selecionaItemListaByIndex(WebElement elemento, int index){
 		waitProcessPage();
 		Select lista = new Select(elemento);
 		lista.selectByIndex(index);
